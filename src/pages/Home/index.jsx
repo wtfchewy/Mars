@@ -36,7 +36,7 @@ const Home = () => {
                     <div className="flex flex-col w-full md:w-1/2 gap-5">
                         <h1 className="text-copy font-black text-7xl">Hey, I'm <span className="text-primary">Wes</span>.</h1>
 
-                        <p className="text-copy text-xl">Give your community a leading edge against your competition with modern designs and compatibility across all devices.</p>
+                        <p className="text-copy text-xl">I craft modern, captivating websites and software that transform your vision into a digital reality.</p>
 
                         <div className="flex flex-row gap-4">
                             <a href="/contact" className="bg-primary font-semibold text-primary-content px-9 py-3 rounded-full hover:bg-primary/80 duration-200 transition ease-in-out">

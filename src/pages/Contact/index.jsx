@@ -1,22 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faCheck, faPaperPlane, faCopy } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 const Contact = () => {
+    const [copied, setCopied] = useState(false);
+
     const copyToClipboard = () => {
         navigator.clipboard.writeText("wtfchewy");
-        alert("Copied to discord clipboard!");
+        setCopied(true);
+        toast.success("Discord username copied to clipboard!");
+        
+        setTimeout(() => {
+            setCopied(false);
+        }, 3000);
     }
 
     return (
         <div className="w-full min-h-screen flex flex-col">
             <Navbar />
 
-            <div className="flex flex-col items-center justify-center flex-grow w-full px-5 md:px-0 md:w-1/2 text-center mx-auto">
-                <h1 className="font-bold text-6xl">Hire me!</h1>
-                <p className="text-2xl mt-4">Ready to get started? Contact me on one of the methods listed below to begin the process. Please allow up to 24 hours for a response.</p>
+            <div className="flex flex-col items-center justify-center flex-grow w-full px-5 md:px-0 md:w-3/4 lg:w-2/3 text-center mx-auto gap-10 py-16">
+                <h1 className="font-bold text-4xl md:text-6xl text-copy">Ready to <span className="text-primary">transform</span> your online presence?</h1>
+                
+                <p className="text-lg max-w-2xl">Connect with me today to begin crafting your digital vision. I respond to all inquiries within 24 hours and can't wait to help bring your project to life!</p>
 
                 <div className="flex w-full flex-row items-center mt-8 bg-foreground p-4 rounded-lg drop-shadow-sm border-2 border-border gap-5">
                     <a href="mailto:wes@mars.rip" className="w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 border-2 border-border hover:border-primary transition-all duration-200">
