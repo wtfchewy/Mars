@@ -13,12 +13,12 @@ const Footer = () => {
                 <NavLink to="/portfolio" className="text-copy-lighter hover:text-copy duration-200 transition ease-in-out">
                     Portfolio
                 </NavLink>
-                <NavLink to="/about" className="text-copy-lighter hover:text-copy duration-200 transition ease-in-out">
+                {/* <NavLink to="/about" className="text-copy-lighter hover:text-copy duration-200 transition ease-in-out">
                     About
                 </NavLink>
                 <NavLink to="/faq" className="text-copy-lighter hover:text-copy duration-200 transition ease-in-out">
                     FAQ
-                </NavLink>
+                </NavLink> */}
             </div>
         </footer>
     );

@@ -38,7 +38,7 @@ const Navbar = () => {
                 </NavLink>
 
                 {isHovered && (
-                    <div onMouseLeave={() => setIsHovered(false)} className="w-1/5 absolute bg-foreground border border-border rounded-lg shadow-lg p-2 top-14 ml-12">
+                    <div onMouseLeave={() => setIsHovered(false)} className="w-1/6 absolute bg-foreground border border-border rounded-lg shadow-lg p-2 top-14 ml-12">
                         <NavLink to={`/portfolio`} className="block px-2 rounded-md py-1 font-medium hover:text-primary hover:bg-primary-content duration-200 transition ease-in-out">
                             All
                         </NavLink>
@@ -50,12 +50,12 @@ const Navbar = () => {
                     </div>
                 )}
 
-                <NavLink to="/about" className="py-1 font-medium hover:text-primary duration-200 transition ease-in-out">
+                {/* <NavLink to="/about" className="py-1 font-medium hover:text-primary duration-200 transition ease-in-out">
                     About
                 </NavLink>
                 <NavLink to="/faq" className="py-1 font-medium hover:text-primary duration-200 transition ease-in-out">
                     FAQ
-                </NavLink>
+                </NavLink> */}
             </div>
 
             <NavLink to={'/contact'} className="bg-primary font-semibold text-primary-content px-8 py-2 rounded-full hover:bg-primary/80 duration-200 transition ease-in-out">
