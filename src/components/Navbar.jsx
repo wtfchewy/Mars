@@ -23,12 +23,12 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="bg-foreground border-b border-border py-5 px-5 md:px-20 flex justify-between items-center">
+        <nav className="bg-foreground border-b border-border py-6 px-5 md:px-20 flex justify-between items-center">
             <NavLink to="/" className="w-26">
                 <img src={logo} alt="alt" />
             </NavLink>
 
-            <div className="flex flex-row items-center gap-5">
+            <div className="flex flex-row items-center gap-5 md:gap-10">
                 <NavLink to="/" className="py-1 font-medium hover:text-primary duration-200 transition ease-in-out">
                     Home
                 </NavLink>
