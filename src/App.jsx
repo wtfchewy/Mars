@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home, Portfolio, Project } from './pages';
+import { Contact, Home, Portfolio, Project } from './pages';
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
     <Router>
         <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='/portfolio/:category?' element={<Portfolio />} />
             <Route path='/projects/:project' element={<Project />} />
         </Routes>
