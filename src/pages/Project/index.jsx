@@ -44,7 +44,7 @@ const Project = () => {
 
             <div className="flex flex-col flex-grow px-5 md:px-20 my-10">
                 <div className="flex flex-col md:flex-row justify-start gap-10">
-                    <img src={projectDetails.images[0]} alt={projectDetails.name} className="w-1/2 h-auto rounded-lg" />
+                    <img src={projectDetails.images[0]} alt={projectDetails.name} className="w-1/2 h-auto rounded-lg border-2 border-border drop-shadow-md" />
 
                     <div className="flex flex-col w-full">
                         <h1 className="text-4xl font-bold">{projectDetails.name}</h1>
