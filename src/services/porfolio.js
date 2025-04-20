@@ -49,3 +49,13 @@ export const getLatestProjects = async () => {
         return [];
     }
 }
+
+export const getCategories = async () => {
+    const q = query(collection(db, "portfolio"));
+    const querySnapshot = await getDocs(q);
+    const categories = new Set();
+    querySnapshot.forEach((doc) => {
+        categories.add(doc.data().category);
+    });
+    return Array.from(categories);
+}
