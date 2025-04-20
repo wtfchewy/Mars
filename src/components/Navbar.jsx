@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { getCategories } from "../services/porfolio";
+import logo from '../assets/logo.svg';
 
 const Navbar = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
     return (
         <nav className="bg-foreground border-b border-border py-5 px-5 md:px-20 flex justify-between items-center">
             <NavLink to="/" className="w-26">
-                <img src="logo.svg" alt="alt" />
+                <img src={logo} alt="alt" />
             </NavLink>
 
             <div className="flex flex-row items-center gap-5">
