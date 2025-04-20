@@ -70,8 +70,8 @@ const Home = () => {
                         ) : (
                             latestProjects.map((project) => (
                                 <a key={project.id} href={`/projects/${project.id}`} className="hover:scale-105 duration-200 transition ease-in-out flex flex-col gap-3 items-center">
-                                    <div className="">
-                                        <img src={project.images[0]} alt={project.name} className="h-60 rounded-md border-2 border-border drop-shadow-sm" />
+                                    <div className="h-60 w-full flex justify-center items-center overflow-hidden">
+                                        <img src={project.images[0]} alt={project.name} className="h-full object-cover rounded-md border-2 border-border drop-shadow-sm" />
                                     </div>
 
                                     <h1 className="text-2xl font-semibold">{project.name}</h1>
