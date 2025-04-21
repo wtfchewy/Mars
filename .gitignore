@@ -26,3 +26,6 @@ bun.lock
 
 # Firebase
 src/services/config.js
+.firebaserc
+firebase.json
+.firebase/
