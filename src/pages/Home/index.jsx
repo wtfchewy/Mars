@@ -56,7 +56,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="w-full h-screen flex flex-col items-center justify-center">
+                <div className="w-full min-h-screen py-20 flex flex-col items-center justify-center">
                     <h2 className="text-copy-lighter font-medium text-lg">MOST RECENT</h2>
                     <h1 className="font-bold text-6xl">My Latest Projects</h1>
 
@@ -70,7 +70,7 @@ const Home = () => {
                         ) : (
                             latestProjects.map((project) => (
                                 <a key={project.id} href={`/projects/${project.id}`} className="hover:scale-105 duration-200 transition ease-in-out flex flex-col gap-3 items-center">
-                                    <div className="h-60 w-full flex justify-center items-center overflow-hidden">
+                                    <div className="w-1/3 w-full flex justify-center items-center overflow-hidden">
                                         <img src={project.images[0]} alt={project.name} className="h-full object-cover rounded-md border-2 border-border drop-shadow-sm" />
                                     </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
                     </div>
 
                     <NavLink to="/portfolio" className="mt-20 bg-primary font-semibold text-primary-content px-20 py-3 rounded-full hover:bg-primary/80 duration-200 transition ease-in-out">
-                        Portfolio
+                        My Portfolio
                         <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
                     </NavLink>
                 </div>
