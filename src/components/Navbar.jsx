@@ -32,13 +32,14 @@ const Navbar = () => {
                 <NavLink to="/" className="py-1 font-medium hover:text-primary duration-200 transition ease-in-out">
                     Home
                 </NavLink>
+                
                 <NavLink to="/portfolio" onMouseEnter={() => setIsHovered(true)} className="py-1 font-medium hover:text-primary duration-200 transition ease-in-out">
                     Portfolio
                     <FontAwesomeIcon icon={faChevronDown} className={`ml-1 ${isHovered && 'rotate-180'} transition duration-300 ease-in-out`} />
                 </NavLink>
 
                 {isHovered && (
-                    <div onMouseLeave={() => setIsHovered(false)} className="w-1/6 absolute bg-foreground border border-border rounded-lg shadow-lg p-2 top-14 ml-12">
+                    <div onMouseLeave={() => setIsHovered(false)} className="w-1/3 md:w-1/6 absolute bg-foreground border border-border rounded-lg shadow-lg p-2 top-14 ml-12">
                         <NavLink to={`/portfolio`} className="block px-2 rounded-md py-1 font-medium hover:text-primary hover:bg-primary-content duration-200 transition ease-in-out">
                             All
                         </NavLink>
