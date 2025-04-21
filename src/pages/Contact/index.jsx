@@ -28,13 +28,13 @@ const Contact = () => {
                 <p className="text-lg max-w-2xl">Connect with me today to begin crafting your digital vision. I respond to all inquiries within 24 hours and can't wait to help bring your project to life!</p>
 
                 <div className="flex w-full flex-row items-center mt-8 bg-foreground p-4 rounded-lg drop-shadow-sm border-2 border-border gap-5">
-                    <a href="mailto:wes@mars.rip" className="w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 border-2 border-border hover:border-primary transition-all duration-200">
-                        <FontAwesomeIcon icon={faEnvelope} className="text-4xl text-blue-500" />
+                    <a href="mailto:wes@mars.rip" className="bg-blue-500 text-white hover:scale-105 w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 transition-all duration-200">
+                        <FontAwesomeIcon icon={faEnvelope} className="text-4xl" />
                         <p className="text-lg">wes@mars.rip</p>
                     </a>
 
-                    <button onClick={() => copyToClipboard()} className="hover:cursor-pointer w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 border-2 border-border hover:border-primary transition-all duration-200">
-                        <FontAwesomeIcon icon={faDiscord} className="text-4xl text-indigo-500" />
+                    <button onClick={() => copyToClipboard()} className="bg-indigo-500 text-white hover:scale-105 hover:cursor-pointer w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 transition-all duration-200">
+                        <FontAwesomeIcon icon={faDiscord} className="text-4xl" />
                         <p className="text-lg">wtfchewy</p>
                     </button>
                 </div>
