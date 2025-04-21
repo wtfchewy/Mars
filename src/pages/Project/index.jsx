@@ -56,7 +56,7 @@ const Project = () => {
                         <p className="text-lg text-copy-light mt-2">{projectDetails.description}</p>
 
                         <div className="flex flex-row gap-5 mt-5">
-                            <a href={projectDetails.url} className="bg-primary text-white w-1/2 text-center font-semibold py-2 rounded-full hover:bg-primary/80 transition duration-200">View Project</a>
+                            <a href={projectDetails.url} className={`${projectDetails.url == '' ? 'bg-primary/30 hover:cursor-not-allowed' : 'hover:bg-primary/80'} bg-primary text-white w-1/2 text-center font-semibold py-2 rounded-full transition duration-200`}>View Project</a>
 
                             <NavLink to={`/portfolio/${projectDetails.category}`} className="bg-copy text-foreground w-1/2 text-center font-semibold py-2 rounded-full hover:bg-copy/90 transition duration-200">Back to Portfolio</NavLink>
                         </div>
