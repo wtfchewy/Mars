@@ -44,9 +44,9 @@ const Project = () => {
 
             <div className="flex flex-col flex-grow px-5 md:px-20 my-10">
                 <div className="flex flex-col md:flex-row justify-start gap-10">
-                    <img src={projectDetails.images[0]} alt={projectDetails.name} className="w-full md:w-1/2 h-auto rounded-lg border-2 border-border drop-shadow-md" />
+                    <img src={projectDetails.images[0]} alt={projectDetails.name} className="w-full md:max-w-1/2 h-auto rounded-lg border-2 border-border drop-shadow-md" />
 
-                    <div className="flex flex-col w-full">
+                    <div className="flex flex-col w-1/2">
                         <h1 className="text-4xl font-bold">{projectDetails.name}</h1>
                         <div className="flex flex-row gap-2 mt-2">
                             {projectDetails.tags.map((tag, index) => (
@@ -56,9 +56,9 @@ const Project = () => {
                         <p className="text-lg text-copy-light mt-2">{projectDetails.description}</p>
 
                         <div className="flex flex-row gap-5 mt-5">
-                            <a href={projectDetails.url} className="bg-primary text-white w-1/2 text-center font-semibold tracking-wide py-2 rounded-full hover:bg-primary/80 transition duration-200">View Project</a>
+                            <a href={projectDetails.url} className="bg-primary text-white w-1/2 text-center font-semibold py-2 rounded-full hover:bg-primary/80 transition duration-200">View Project</a>
 
-                            <NavLink to={`/portfolio/${projectDetails.category}`} className="bg-copy text-foreground w-1/2 text-center font-semibold tracking-wide py-2 rounded-full hover:bg-copy/90 transition duration-200">Back to Portfolio</NavLink>
+                            <NavLink to={`/portfolio/${projectDetails.category}`} className="bg-copy text-foreground w-1/2 text-center font-semibold py-2 rounded-full hover:bg-copy/90 transition duration-200">Back to Portfolio</NavLink>
                         </div>
                     </div>
 
