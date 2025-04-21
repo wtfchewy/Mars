@@ -60,17 +60,17 @@ const Home = () => {
                     <h2 className="text-copy-lighter font-medium text-lg">MOST RECENT</h2>
                     <h1 className="font-bold text-6xl">My Latest Projects</h1>
 
-                    <div className="flex flex-col md:flex-row gap-5 mt-10">
+                    <div className="flex flex-col md:flex-row gap-5 mt-10 w-full">
                         {loading ? (
-                            <div className="flex flex-col gap-5">
-                                <div className="animate-pulse bg-copy/10 w-full h-60 rounded-md border-2 border-border drop-shadow-sm" />
-                                <div className="animate-pulse bg-copy/10 w-full h-60 rounded-md border-2 border-border drop-shadow-sm" />
-                                <div className="animate-pulse bg-copy/10 w-full h-60 rounded-md border-2 border-border drop-shadow-sm" />
-                            </div>
+                            <>
+                                <div className="animate-pulse bg-copy/10 w-1/3 h-60 rounded-md border-2 border-border drop-shadow-sm" />
+                                <div className="animate-pulse bg-copy/10 w-1/3 h-60 rounded-md border-2 border-border drop-shadow-sm" />
+                                <div className="animate-pulse bg-copy/10 w-1/3 h-60 rounded-md border-2 border-border drop-shadow-sm" />
+                            </>
                         ) : (
                             latestProjects.map((project) => (
                                 <a key={project.id} href={`/projects/${project.id}`} className="hover:scale-105 duration-200 transition ease-in-out flex flex-col gap-3 items-center">
-                                    <div className="w-1/3 w-full flex justify-center items-center overflow-hidden">
+                                    <div className="w-full flex justify-center items-center overflow-hidden">
                                         <img src={project.images[0]} alt={project.name} className="h-full object-cover rounded-md border-2 border-border drop-shadow-sm" />
                                     </div>
 
