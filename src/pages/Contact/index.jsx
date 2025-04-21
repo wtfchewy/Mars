@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { faEnvelope, faCheck, faPaperPlane, faCopy } from "@fortawesome/free-solid-svg-icons";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 const Contact = () => {
@@ -31,6 +31,11 @@ const Contact = () => {
                     <a href="mailto:wes@mars.rip" className="bg-blue-500 text-white hover:scale-105 w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 transition-all duration-200">
                         <FontAwesomeIcon icon={faEnvelope} className="text-4xl" />
                         <p className="text-lg">wes@mars.rip</p>
+                    </a>
+
+                    <a href="https://github.com/wtfchewy" className="bg-copy text-white hover:scale-105 w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 transition-all duration-200">
+                        <FontAwesomeIcon icon={faGithub} className="text-4xl" />
+                        <p className="text-lg">wtfchewy</p>
                     </a>
 
                     <button onClick={() => copyToClipboard()} className="bg-indigo-500 text-white hover:scale-105 hover:cursor-pointer w-1/2 flex flex-col items-center drop-shadow-md rounded-lg py-7 transition-all duration-200">
