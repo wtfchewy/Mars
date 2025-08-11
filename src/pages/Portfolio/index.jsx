@@ -36,7 +36,7 @@ const Portfolio = () => {
         } else {
             fetchProjects();
         }
-    }, []);
+    }, [category]);
 
     if (loading) {
         return (
