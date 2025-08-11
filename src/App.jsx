@@ -6,6 +6,7 @@ function App() {
   return (
     <Router>
         <Routes>
+            <Route path='*' element={<Home />} />
             <Route path='/' element={<Home />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/portfolio/:category?' element={<Portfolio />} />
